@@ -136,31 +136,25 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="row mb-3">
-                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Re-enter-Password</label>
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">DoB</label>
                         <div className="col-sm-10">
                             <input type="password" className="form-control w-75" id="inputPassword3" required />
                         </div>
                     </div>
-                    <div className='row d-flex justify-content align-items-center'>
-                        <div className="col-lg-3 mb-3">
-                            <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">DoB</label>
-                            <div className="col-sm-10">
-                                <input type="password" className="form-control w-75" id="inputPassword3" required />
-                            </div>
-                        </div>
-                        <div className="col-lg-3 mb-3">
-                            <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Religion</label>
-                            <div className="col-sm-10">
-                                <input type="password" className="form-control w-75" id="inputPassword3" required />
-                            </div>
-                        </div>
-                        <div className="col-lg-3 mb-3">
-                            <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Gender</label>
-                            <div className="col-sm-10">
-                                <input type="password" className="form-control w-75" id="inputPassword3" required />
-                            </div>
+                    <div className="row mb-3">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Religion</label>
+                        <div className="col-sm-10">
+                            <input type="password" className="form-control w-75" id="inputPassword3" required />
                         </div>
                     </div>
+                    <div className="row mb-3">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Gender</label>
+                        <div className="col-sm-10">
+                            <input type="password" className="form-control w-75" id="inputPassword3" required />
+                        </div>
+                    </div>
+
+
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupFile01">Upload NID</label>
                         <input type="file" class="form-control" id="inputGroupFile01" />
