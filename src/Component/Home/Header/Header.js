@@ -22,6 +22,10 @@ const Header = () => {
                     >
                         Home
                     </NavLink>
+                   
+
+                    {user.email ?
+                    <>
                     <NavLink
                         to="/register"
                         activeStyle={{
@@ -29,10 +33,17 @@ const Header = () => {
                             color: "red"
                         }}
                     >
-                        Register
+                        Verfication
                     </NavLink>
-
-                    {user.email ? <Button className='ms-5' onClick={logOut} variant="light">Logout</Button> :
+                    <Button className='ms-5' onClick={logOut} variant="light">Logout</Button>
+                    <Navbar.Text className='ms-5'>
+                        Signed in as: <a href="#login">{user?.displayName}</a>
+                    </Navbar.Text>
+                    </> :
+                   
+                    <>
+                    
+                     
                         <NavLink
                             to="/login"
                             activeStyle={{
@@ -40,8 +51,10 @@ const Header = () => {
                                 color: "red"
                             }}
                         >
-                            Login
+                            Register/Login
                         </NavLink>
+                    </>
+                   
                     }
                     <NavLink
                         to="/medicalrecords"
@@ -52,9 +65,7 @@ const Header = () => {
                     >
                         Medical Records
                     </NavLink>
-                    <Navbar.Text className='ms-5'>
-                        Signed in as: <a href="#login">{user?.displayName}</a>
-                    </Navbar.Text>
+                    
                 </Container>
 
             </Navbar>

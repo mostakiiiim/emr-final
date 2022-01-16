@@ -1,3 +1,4 @@
+import { Button, Modal } from 'bootstrap';
 import React from 'react';
 
 const Register = () => {
@@ -5,17 +6,9 @@ const Register = () => {
         <div>
             <div class="container">
 
-                <h1 class="text-center">Registration Form</h1>
+                <h1 class="text-center">Verification Form</h1>
                 <form class="row g-2">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="First Name" />
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">.</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Last Name" />
-                    </div>
+                    
 
                     <div class="col-md-12">
                         <label for="inputPassword4" class="form-label">Password</label>
@@ -37,15 +30,15 @@ const Register = () => {
                     </div>
 
                     <div class="col-12">
-                        <div class="form-check">
+                        <div class="form-check text-start mt-2  mb-2">
                             <input class="form-check-input" type="checkbox" id="gridCheck" />
                             <label class="form-check-label" for="gridCheck">
                                 I agree to the terms & conditions
                             </label>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                    <div class="col-12 text-center g-1">
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal1"
                             data-bs-whatever="@mdo">Register As Doctor</button>
 
 
@@ -74,13 +67,13 @@ const Register = () => {
                                     <div class="modal-footer">
 
                                         <button type="button" class="btn btn-dark">
-                                            <a class="nav-link text-white" href="doctor.html">Verify</a>
+                                            <a class="nav-link text-white" href="/doctor">Verify</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#exampleModal2"
                             data-bs-whatever="@mdo">Register As Patient</button>
 
 
@@ -109,7 +102,7 @@ const Register = () => {
                                     <div class="modal-footer">
 
                                         <button type="button" class="btn btn-dark">
-                                            <a class="nav-link text-white" href="patient.html">Verify</a>
+                                            <a class="nav-link text-white" href="/patient">Verify</a>
                                         </button>
                                     </div>
                                 </div>
@@ -144,7 +137,7 @@ const Register = () => {
                                     <div class="modal-footer">
 
                                         <button type="button" class="btn btn-dark">
-                                            <a class="nav-link text-white" href="medical-representative.html">Verify</a>
+                                            <a class="nav-link text-white" href="/medicalrep">Verify</a>
                                         </button>
                                     </div>
                                 </div>
@@ -154,7 +147,7 @@ const Register = () => {
                 </form>
 
 
-
+        
 
             </div>
 
